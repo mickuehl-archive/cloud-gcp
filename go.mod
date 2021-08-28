@@ -1,4 +1,4 @@
-module github.com/txsvc/gcp
+module github.com/txsvc/cloud-gcp
 
 go 1.15
 
