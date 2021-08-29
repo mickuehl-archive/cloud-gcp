@@ -91,10 +91,11 @@ func (np *stackdriverImpl) Close() error {
 
 // IF ErrorReportingProvider
 
-func (np *stackdriverImpl) ReportError(e error) {
+func (np *stackdriverImpl) ReportError(e error) error {
 	if e != nil {
 		np.errorClient.Report(stackdriver_error.Entry{Error: e})
 	}
+	return e
 }
 
 // IF LoggingProvider
