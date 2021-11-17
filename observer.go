@@ -86,6 +86,15 @@ func NewGoogleStackdriverProvider() interface{} {
 // IF GenericProvider
 
 func (np *stackdriverImpl) Close() error {
+	if np.errorClient != nil {
+		np.errorClient.Flush()
+		np.errorClient.Close()
+	}
+	if np.loggingClient != nil {
+		np.logger.Flush()
+		np.metrics.Flush()
+		np.loggingClient.Close()
+	}
 	return nil
 }
 

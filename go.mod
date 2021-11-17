@@ -7,8 +7,9 @@ require (
 	cloud.google.com/go/logging v1.4.2
 	cloud.google.com/go/storage v1.16.0
 	github.com/labstack/echo/v4 v4.2.0
+	github.com/smallstep/assert v0.0.0-20200723003110-82e2b9b3b262
 	github.com/stretchr/testify v1.7.0
 	github.com/txsvc/httpservice v1.0.0
-	github.com/txsvc/stdlib v1.4.1
+	github.com/txsvc/stdlib v1.4.2
 	golang.org/x/oauth2 v0.0.0-20210805134026-6f1e6394065a
 )

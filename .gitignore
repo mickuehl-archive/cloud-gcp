@@ -1,3 +1,11 @@
+# Custom stuff
+app.yaml
+credentials.json
+google-credentials.json
+master.key
+.DS_Store
+stuff.md
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
