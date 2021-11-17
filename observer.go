@@ -134,7 +134,7 @@ func (np *stackdriverImpl) DisableLogging() {
 // IF MetricsProvider
 
 func (np *stackdriverImpl) Meter(ctx context.Context, metric string, args ...string) {
-	LogWithLevel(np.metrics, observer.LevelInfo, metric, args...)
+	LogWithLevel(np.metrics, observer.LevelNotice, metric, args...)
 }
 
 func LogWithLevel(logger *stackdriver_logging.Logger, lvl observer.Severity, msg string, keyValuePairs ...string) {
@@ -166,14 +166,19 @@ func LogWithLevel(logger *stackdriver_logging.Logger, lvl observer.Severity, msg
 
 func toStackdriverSeverity(severity observer.Severity) stackdriver_logging.Severity {
 	switch severity {
+	case observer.LevelDebug:
+		return stackdriver_logging.Debug
 	case observer.LevelInfo:
 		return stackdriver_logging.Info
+	case observer.LevelNotice:
+		return stackdriver_logging.Notice
 	case observer.LevelWarn:
 		return stackdriver_logging.Warning
 	case observer.LevelError:
 		return stackdriver_logging.Error
-	case observer.LevelDebug:
-		return stackdriver_logging.Debug
+	case observer.LevelAlert:
+		return stackdriver_logging.Alert
+
 	}
 	return stackdriver_logging.Info
 }

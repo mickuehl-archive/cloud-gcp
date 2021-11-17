@@ -209,8 +209,8 @@ github.com/txsvc/httpservice v1.0.0 h1:4JqAhnX6+JPnZqffJGhTN/Z6cP4uH/hzkIt8P1Rnd
 github.com/txsvc/httpservice v1.0.0/go.mod h1:QgWNRm91xngEe6KmG8Z68C3y+7cvIwg6IEblEo4IoFg=
 github.com/txsvc/platform/v2 v2.7.1 h1:bZPf1QCycPH+VxY5yqgyyXCZm2KXMPmoIHzvs8pyaHk=
 github.com/txsvc/platform/v2 v2.7.1/go.mod h1:2CNffX2vpcHUYpG6FZgx/uUSFcJfxZpb4Pqe8rVC/WY=
-github.com/txsvc/stdlib v1.4.2 h1:b9j6RRnDoJKDM6gZHjQXlKuwGua8u/sEj/7Qaiz75VU=
-github.com/txsvc/stdlib v1.4.2/go.mod h1:+82HAYZlFB22EfjzzSfqLUVf4zziBvBV9KIp5RyRJQE=
+github.com/txsvc/stdlib v1.4.3 h1:LbTnAw1kxJammH7r+eVD6UHpLlGuROG1Y+jhhwyHWDc=
+github.com/txsvc/stdlib v1.4.3/go.mod h1:+82HAYZlFB22EfjzzSfqLUVf4zziBvBV9KIp5RyRJQE=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/valyala/fasttemplate v1.0.1/go.mod h1:UQGH1tvbgY+Nz5t2n7tXsz52dQxojPUpymEIMZ47gx8=
